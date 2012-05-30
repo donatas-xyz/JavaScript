@@ -1,0 +1,21 @@
+#cookiesWarning {
+	
+}
+#cookiesWarningActive {
+	background: #FFFF69;
+	margin: 5px;
+	padding: 5px;
+	box-shadow: 8px 8px 4px #999;
+	border-radius: 7px;
+}
+
+#cookiesWarningActive small {
+	background: #FA5528;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding: 3px;
+	color: #fff;
+	border: none;
+	border-radius: 7px;
+	box-shadow: 4px 4px 2px #233e5b;
+}

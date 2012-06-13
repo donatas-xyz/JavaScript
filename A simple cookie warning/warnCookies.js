@@ -1,8 +1,8 @@
 ///////////////////////////////////////
 // Author: Donatas Stonys            //
-// WWW: http://www.bluewhaleseo.com  //
-// Date: 8 June 2012                 //
-// Version: 0.5                      //
+// WWW: http://www.BlueWhaleSEO.com  //
+// Date: 13 June 2012                 //
+// Version: 0.6                      //
 ///////////////////////////////////////
 
 // Asign current date to variable //
@@ -87,15 +87,19 @@ function acceptCookies() {
 	"use strict";
 
 	document.getElementById("cookiesWarning").appendChild(newCookiesWarningDiv).setAttribute("id", "cookiesWarningActive");
-	document.getElementById("cookiesWarningActive").innerHTML = "<strong>We would like to place cookies on your computer to help us make this website better.</strong><form name='cookieAgreement'><input type='checkbox' name='agreed' value='Agreed'>I accept cookies from this site.<input type='submit' value='Continue' onclick='getAgreementValue(); return false;'></form>";
+	document.getElementById("cookiesWarningActive").innerHTML = "<strong>We would like to place cookies on your computer to help us make this website better. </strong><span id='readMoreURL'></span><form name='cookieAgreement'><input type='checkbox' name='agreed' value='Agreed'>I accept cookies from this site.<input type='submit' value='Continue' onclick='getAgreementValue(); return false;'></form>";
+	// Change the URL of "Read more..." here
+	document.getElementById("readMoreURL").innerHTML = "<a href='http://www.ico.gov.uk/for_organisations/privacy_and_electronic_communications/the_guide/cookies.aspx' title='ICO - New EU cookie law (e-Privacy Directive)' target='_blank' rel='nofollow'>Read more...</a>";
 }
 
 function acceptCookiesTickBoxWarning() {
 	"use strict";
-	
+
 	setCookie("TestCookie", "Yes", "", "1 Jan 2000 00:00:00");
 	document.getElementById("cookiesWarning").appendChild(newCookiesWarningDiv).setAttribute("id", "cookiesWarningActive");
-	document.getElementById("cookiesWarningActive").innerHTML = "<strong>We would like to place cookies on your computer to help us make this website better.</strong><form name='cookieAgreement'><p><small>You must tick the 'I accept cookies from this site' box to accept. If you continue without changing your settings, we'll assume that you agree to receive all cookies on this website.</small></p><input type='checkbox' name='agreed' value='Agreed'>I accept cookies from this site.<input type='submit' value='Continue' onclick='getAgreementValue()'></form>";
+	document.getElementById("cookiesWarningActive").innerHTML = "<strong>We would like to place cookies on your computer to help us make this website better. </strong><span id='readMoreURL'></span><form name='cookieAgreement'><p><small>You must tick the 'I accept cookies from this site' box to accept. If you continue without changing your settings, we'll assume that you agree to receive all cookies on this website.</small></p><input type='checkbox' name='agreed' value='Agreed'>I accept cookies from this site.<input type='submit' value='Continue' onclick='getAgreementValue()'></form>";
+	// Change the URL of "Read more..." here
+	document.getElementById("readMoreURL").innerHTML = "<a href='http://www.ico.gov.uk/for_organisations/privacy_and_electronic_communications/the_guide/cookies.aspx' title='ICO - New EU cookie law (e-Privacy Directive)' target='_blank' rel='nofollow'>Read more...</a>";
 }
 
 // Check if cookie has been set before //

@@ -19,3 +19,16 @@
 	border-radius: 7px;
 	box-shadow: 4px 4px 2px #233e5b;
 }
+
+#readMoreURL  a:link {
+	text-decoration: underline;
+	color: #000;
+}
+#readMoreURL  a:visited {
+	text-decoration: underline;
+	color: #000;
+}
+#readMoreURL  a:hover {
+	text-decoration: none;
+	color: #FA5528;
+}

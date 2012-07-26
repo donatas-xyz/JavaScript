@@ -1,8 +1,8 @@
 ///////////////////////////////////////
 // Author: Donatas Stonys            //
 // WWW: http://www.BlueWhaleSEO.com  //
-// Date: 13 June 2012                 //
-// Version: 0.6                      //
+// Date: 26 July 2012                 //
+// Version: 0.7                      //
 ///////////////////////////////////////
 
 // Asign current date to variable //
@@ -87,7 +87,7 @@ function acceptCookies() {
 	"use strict";
 
 	document.getElementById("cookiesWarning").appendChild(newCookiesWarningDiv).setAttribute("id", "cookiesWarningActive");
-	document.getElementById("cookiesWarningActive").innerHTML = "<strong>We would like to place cookies on your computer to help us make this website better. </strong><span id='readMoreURL'></span><form name='cookieAgreement'><input type='checkbox' name='agreed' value='Agreed'>I accept cookies from this site.<input type='submit' value='Continue' onclick='getAgreementValue(); return false;'></form>";
+	document.getElementById("cookiesWarningActive").innerHTML = "<strong id='text'>We would like to place cookies on your computer to help us make this website better. </strong><span id='readMoreURL'></span><form name='cookieAgreement'><input type='checkbox' name='agreed' value='Agreed' class='checkbox'>I accept cookies from this site.<input type='submit' value='Continue' onclick='getAgreementValue(); return false;' class='button'></form>";
 	// Change the URL of "Read more..." here
 	document.getElementById("readMoreURL").innerHTML = "<a href='http://www.ico.gov.uk/for_organisations/privacy_and_electronic_communications/the_guide/cookies.aspx' title='ICO - New EU cookie law (e-Privacy Directive)' target='_blank' rel='nofollow'>Read more...</a>";
 }
@@ -97,7 +97,7 @@ function acceptCookiesTickBoxWarning() {
 
 	setCookie("TestCookie", "Yes", "", "1 Jan 2000 00:00:00");
 	document.getElementById("cookiesWarning").appendChild(newCookiesWarningDiv).setAttribute("id", "cookiesWarningActive");
-	document.getElementById("cookiesWarningActive").innerHTML = "<strong>We would like to place cookies on your computer to help us make this website better. </strong><span id='readMoreURL'></span><form name='cookieAgreement'><p><small>You must tick the 'I accept cookies from this site' box to accept. If you continue without changing your settings, we'll assume that you agree to receive all cookies on this website.</small></p><input type='checkbox' name='agreed' value='Agreed'>I accept cookies from this site.<input type='submit' value='Continue' onclick='getAgreementValue()'></form>";
+	document.getElementById("cookiesWarningActive").innerHTML = "<strong id='text'>We would like to place cookies on your computer to help us make this website better. </strong><span id='readMoreURL'></span><form name='cookieAgreement'><p id='warning'><small>You must tick the 'I accept cookies from this site' box to accept. If you continue without changing your settings, we'll assume that you agree to receive all cookies on this website.</small></p><input type='checkbox' name='agreed' value='Agreed' class='checkbox'>I accept cookies from this site.<input type='submit' value='Continue' onclick='getAgreementValue()' class='button'></form>";
 	// Change the URL of "Read more..." here
 	document.getElementById("readMoreURL").innerHTML = "<a href='http://www.ico.gov.uk/for_organisations/privacy_and_electronic_communications/the_guide/cookies.aspx' title='ICO - New EU cookie law (e-Privacy Directive)' target='_blank' rel='nofollow'>Read more...</a>";
 }
@@ -117,7 +117,7 @@ function checkCookieExist() {
 	} else {
 		// Display warning if cookies are disabled on browser
 		document.getElementById("cookiesWarning").appendChild(newCookiesWarningDiv).setAttribute("id", "cookiesWarningActive");
-		document.getElementById("cookiesWarningActive").innerHTML = "<strong>Cookies are disabled.</strong><br /> Your browser currently not accepting cookies.";
+		document.getElementById("cookiesWarningActive").innerHTML = "<span id='cookiesDisabled'><strong>Cookies are disabled.</strong><br /> Your browser currently not accepting cookies.</span>";
 	}
 }
 

@@ -1,6 +1,7 @@
 #cookiesWarning {
 	
 }
+
 #cookiesWarningActive {
 	background: #FFFF69;
 	margin: 5px;
@@ -31,4 +32,24 @@
 #readMoreURL  a:hover {
 	text-decoration: none;
 	color: #FA5528;
+}
+
+#text {
+	
+}
+
+#warning {
+	
+}
+
+#cookiesDisabled {
+	
+}
+
+.checkbox {
+	
+}
+
+.button {
+	
 }

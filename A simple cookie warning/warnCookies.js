@@ -117,7 +117,7 @@ function checkCookieExist() {
 	} else {
 		// Display warning if cookies are disabled on browser
 		document.getElementById("cookiesWarning").appendChild(newCookiesWarningDiv).setAttribute("id", "cookiesWarningActive");
-		document.getElementById("cookiesWarningActive").innerHTML = "<span id='cookiesDisabled'><strong>Cookies are disabled.</strong><br /> Your browser currently not accepting cookies.</span>";
+		document.getElementById("cookiesWarningActive").innerHTML = "<span id='cookiesDisabled'><strong>Cookies are disabled. We use cookies to give you the best online experience.</strong><br /> Your browser currently not accepting cookies.</span>";
 	}
 }
 

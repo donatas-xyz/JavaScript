@@ -1,8 +1,8 @@
 ///////////////////////////////////////
 // Author: Donatas Stonys            //
 // WWW: http://www.BlueWhaleSEO.com  //
-// Date: 26 July 2012                 //
-// Version: 0.7                      //
+// Date: 26 July 2012                //
+// Version: 0.9                      //
 ///////////////////////////////////////
 
 // Asign current date to variable //
@@ -87,7 +87,7 @@ function acceptCookies() {
 	"use strict";
 
 	document.getElementById("cookiesWarning").appendChild(newCookiesWarningDiv).setAttribute("id", "cookiesWarningActive");
-	document.getElementById("cookiesWarningActive").innerHTML = "<strong id='text'>We would like to place cookies on your computer to help us make this website better. </strong><span id='readMoreURL'></span><form name='cookieAgreement'><input type='checkbox' name='agreed' value='Agreed' class='checkbox'>I accept cookies from this site.<input type='submit' value='Continue' onclick='getAgreementValue(); return false;' class='button'></form>";
+	document.getElementById("cookiesWarningActive").innerHTML = "<strong id='text'>We would like to place cookies on your computer to help us make this website better. </strong><span id='readMoreURL'></span><form name='cookieAgreement'><input type='checkbox' name='agreed' value='Agreed' class='checkbox'><span class='acceptance'>I accept cookies from this site.</span><input type='submit' value='Continue' onclick='getAgreementValue(); return false;' class='button'></form>";
 	// Change the URL of "Read more..." here
 	document.getElementById("readMoreURL").innerHTML = "<a href='http://www.ico.gov.uk/for_organisations/privacy_and_electronic_communications/the_guide/cookies.aspx' title='ICO - New EU cookie law (e-Privacy Directive)' target='_blank' rel='nofollow'>Read more...</a>";
 }
@@ -97,7 +97,7 @@ function acceptCookiesTickBoxWarning() {
 
 	setCookie("TestCookie", "Yes", "", "1 Jan 2000 00:00:00");
 	document.getElementById("cookiesWarning").appendChild(newCookiesWarningDiv).setAttribute("id", "cookiesWarningActive");
-	document.getElementById("cookiesWarningActive").innerHTML = "<strong id='text'>We would like to place cookies on your computer to help us make this website better. </strong><span id='readMoreURL'></span><form name='cookieAgreement'><p id='warning'><small>You must tick the 'I accept cookies from this site' box to accept. If you continue without changing your settings, we'll assume that you agree to receive all cookies on this website.</small></p><input type='checkbox' name='agreed' value='Agreed' class='checkbox'>I accept cookies from this site.<input type='submit' value='Continue' onclick='getAgreementValue()' class='button'></form>";
+	document.getElementById("cookiesWarningActive").innerHTML = "<strong id='text'>We would like to place cookies on your computer to help us make this website better. </strong><span id='readMoreURL'></span><form name='cookieAgreement'><p id='warning'><small>You must tick the 'I accept cookies from this site' box to accept. If you continue without changing your settings, we'll assume that you agree to receive all cookies on this website.</small></p><input type='checkbox' name='agreed' value='Agreed' class='checkbox'><span class='acceptance'>I accept cookies from this site.</span><input type='submit' value='Continue' onclick='getAgreementValue()' class='button'></form>";
 	// Change the URL of "Read more..." here
 	document.getElementById("readMoreURL").innerHTML = "<a href='http://www.ico.gov.uk/for_organisations/privacy_and_electronic_communications/the_guide/cookies.aspx' title='ICO - New EU cookie law (e-Privacy Directive)' target='_blank' rel='nofollow'>Read more...</a>";
 }

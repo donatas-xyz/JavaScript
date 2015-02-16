@@ -1,11 +1,11 @@
 ///////////////////////////////////////
 // Author: Donatas Stonys            //
 // WWW: http://www.BlueWhaleSEO.com  //
-// Date: 26 July 2012                //
-// Version: 0.9                      //
+// Date: 16 February 2015            //
+// Version: 1.0                      //
 ///////////////////////////////////////
 
-// Asign current date to variable //
+// Assign current date to variable //
 var currentDate = new Date();
 
 // Create some DOM elements
@@ -16,7 +16,7 @@ function checkCookie(cookieName) {
 	"use strict";
 	var cookieValue, cookieStartsAt, cookieEndsAt;
 
-	// Get all coookies in one string
+	// Get all cookies in one string
 	cookieValue = document.cookie;
 	// Check if cookie's name is within that string
 	cookieStartsAt = cookieValue.indexOf(" " + cookieName + "=");
@@ -89,7 +89,7 @@ function acceptCookies() {
 	document.getElementById("cookiesWarning").appendChild(newCookiesWarningDiv).setAttribute("id", "cookiesWarningActive");
 	document.getElementById("cookiesWarningActive").innerHTML = "<strong id='text'>We would like to place cookies on your computer to help us make this website better. </strong><span id='readMoreURL'></span><form name='cookieAgreement'><input type='checkbox' name='agreed' value='Agreed' class='checkbox'><span class='acceptance'>I accept cookies from this site.</span><input type='submit' value='Continue' onclick='getAgreementValue(); return false;' class='button'></form>";
 	// Change the URL of "Read more..." here
-	document.getElementById("readMoreURL").innerHTML = "<a href='http://www.ico.gov.uk/for_organisations/privacy_and_electronic_communications/the_guide/cookies.aspx' title='ICO - New EU cookie law (e-Privacy Directive)' target='_blank' rel='nofollow'>Read more...</a>";
+	document.getElementById("readMoreURL").innerHTML = "<a href='https://github.com/BlueWhaleSEO/JavaScript.git' title='ICO - New EU cookie law (e-Privacy Directive)' target='_blank' rel='nofollow'>Read more...</a>";
 }
 
 function acceptCookiesTickBoxWarning() {
@@ -99,7 +99,7 @@ function acceptCookiesTickBoxWarning() {
 	document.getElementById("cookiesWarning").appendChild(newCookiesWarningDiv).setAttribute("id", "cookiesWarningActive");
 	document.getElementById("cookiesWarningActive").innerHTML = "<strong id='text'>We would like to place cookies on your computer to help us make this website better. </strong><span id='readMoreURL'></span><form name='cookieAgreement'><p id='warning'><small>You must tick the 'I accept cookies from this site' box to accept. If you continue without changing your settings, we'll assume that you agree to receive all cookies on this website.</small></p><input type='checkbox' name='agreed' value='Agreed' class='checkbox'><span class='acceptance'>I accept cookies from this site.</span><input type='submit' value='Continue' onclick='getAgreementValue()' class='button'></form>";
 	// Change the URL of "Read more..." here
-	document.getElementById("readMoreURL").innerHTML = "<a href='http://www.ico.gov.uk/for_organisations/privacy_and_electronic_communications/the_guide/cookies.aspx' title='ICO - New EU cookie law (e-Privacy Directive)' target='_blank' rel='nofollow'>Read more...</a>";
+	document.getElementById("readMoreURL").innerHTML = "<a href='https://github.com/BlueWhaleSEO/JavaScript.git' title='ICO - New EU cookie law (e-Privacy Directive)' target='_blank' rel='nofollow'>Read more...</a>";
 }
 
 // Check if cookie has been set before //

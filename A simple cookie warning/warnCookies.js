@@ -89,7 +89,7 @@ function acceptCookies() {
 	document.getElementById("cookiesWarning").appendChild(newCookiesWarningDiv).setAttribute("id", "cookiesWarningActive");
 	document.getElementById("cookiesWarningActive").innerHTML = "<strong id='text'>We would like to place cookies on your computer to help us make this website better. </strong><span id='readMoreURL'></span><form name='cookieAgreement'><input type='checkbox' name='agreed' value='Agreed' class='checkbox'><span class='acceptance'>I accept cookies from this site.</span><input type='submit' value='Continue' onclick='getAgreementValue(); return false;' class='button'></form>";
 	// Change the URL of "Read more..." here
-	document.getElementById("readMoreURL").innerHTML = "<a href='https://github.com/BlueWhaleSEO/JavaScript.git' title='ICO - New EU cookie law (e-Privacy Directive)' target='_blank' rel='nofollow'>Read more...</a>";
+	document.getElementById("readMoreURL").innerHTML = "<a href='https://ico.org.uk/for-organisations/guide-to-pecr/cookies/' title='ICO - New EU cookie law (e-Privacy Directive)' target='_blank' rel='nofollow'>Read more...</a>";
 }
 
 function acceptCookiesTickBoxWarning() {
@@ -99,7 +99,7 @@ function acceptCookiesTickBoxWarning() {
 	document.getElementById("cookiesWarning").appendChild(newCookiesWarningDiv).setAttribute("id", "cookiesWarningActive");
 	document.getElementById("cookiesWarningActive").innerHTML = "<strong id='text'>We would like to place cookies on your computer to help us make this website better. </strong><span id='readMoreURL'></span><form name='cookieAgreement'><p id='warning'><small>You must tick the 'I accept cookies from this site' box to accept. If you continue without changing your settings, we'll assume that you agree to receive all cookies on this website.</small></p><input type='checkbox' name='agreed' value='Agreed' class='checkbox'><span class='acceptance'>I accept cookies from this site.</span><input type='submit' value='Continue' onclick='getAgreementValue()' class='button'></form>";
 	// Change the URL of "Read more..." here
-	document.getElementById("readMoreURL").innerHTML = "<a href='https://github.com/BlueWhaleSEO/JavaScript.git' title='ICO - New EU cookie law (e-Privacy Directive)' target='_blank' rel='nofollow'>Read more...</a>";
+	document.getElementById("readMoreURL").innerHTML = "<a href='https://ico.org.uk/for-organisations/guide-to-pecr/cookies/' title='ICO - New EU cookie law (e-Privacy Directive)' target='_blank' rel='nofollow'>Read more...</a>";
 }
 
 // Check if cookie has been set before //

@@ -2,7 +2,7 @@
 // Author: Donatas Stonys            //
 // WWW: http://www.BlueWhaleSEO.com  //
 // Date: 16 February 2015            //
-// Version: 1.0.1                      //
+// Version: 1.0                      //
 ///////////////////////////////////////
 
 // Assign current date to variable //
